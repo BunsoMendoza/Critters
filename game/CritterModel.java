@@ -84,6 +84,11 @@ public class CritterModel {
             info.put(next, new PrivateData(new Point(x, y), d));
         }
         String name = critter.getName();
+       
+        String delims = "[.]+";
+        String[] tokens = name.split(delims);
+        name = tokens[tokens.length -1];
+
         if (!critterCount.containsKey(name))
             critterCount.put(name, number);
         else

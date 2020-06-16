@@ -14,7 +14,8 @@ import java.util.*;
 public class Shell extends Critter {
    
    public Color getColor() {return null;}
-   public String getName(){return null;}
+   public String getCritterName(){return null;}
+   
    
    //step counter should line up with simulation step counter.
    public int step = 1; 

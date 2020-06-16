@@ -21,7 +21,7 @@ public class Bear extends Critter {
             
         }
     }
-   public String getName(){
+   public String getCritterName(){
        return "Bear";
    }
     public Color getColor() {

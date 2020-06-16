@@ -6,7 +6,7 @@ import java.util.Random;
 public class Lion extends Critter{
 
     
-    public String getName(){
+    public String getCritterName(){
         return "Lion";
 
     }

@@ -19,7 +19,7 @@ public class EMBO extends Critter {
 		this.EMBOIndex = 0;
 	}
 
-	public String getName(){
+	public String getCritterName(){
         return "EMBO";
 
     }

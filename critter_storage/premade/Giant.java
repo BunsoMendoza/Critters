@@ -5,7 +5,7 @@ public class Giant extends Critter{
    
     int counter = 0;
     
-    public String getName(){
+    public String getCritterName(){
         return "Giant";
 
     }

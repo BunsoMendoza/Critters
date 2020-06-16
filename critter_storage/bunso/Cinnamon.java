@@ -8,7 +8,7 @@ public class Cinnamon extends Critter {
 
 
 
-    public String getName(){
+    public String getCritterName(){
         return "Cinnamon";
 
     }

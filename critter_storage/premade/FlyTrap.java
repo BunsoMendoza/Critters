@@ -20,7 +20,7 @@ public class FlyTrap extends Critter {
     public Color getColor() {
         return Color.RED;
     }
-    public String getName(){
+    public String getCritterName(){
         return "FlyTrap";
     }
 

@@ -11,7 +11,7 @@ public class Boon extends Critter {
     private int sumOfN = 0;
     private int N = 1;
     
-    public String getName(){
+    public String getCritterName(){
         return "Food";
 
     }

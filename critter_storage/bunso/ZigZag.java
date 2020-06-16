@@ -8,7 +8,7 @@ public class ZigZag extends Critter {
     int sumOfN = 0;
     int N = 1;
     
-    public String getName(){
+    public String getCritterName(){
         return "ZigZag";
 
     }

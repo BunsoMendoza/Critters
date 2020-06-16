@@ -14,7 +14,7 @@ public class Food extends Critter {
     public String toString() {
         return "F";
     }
-    public String getName(){
+    public String getCritterName(){
         return "Food";
 
     }
