@@ -37,7 +37,6 @@ public abstract class Critter{
     public abstract Color getColor();
     //handle movement 
     public abstract Action getMove(CritterInfo info);
-  
 
     public static enum Neighbor {
         WALL, EMPTY, SAME, OTHER

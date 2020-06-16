@@ -18,17 +18,17 @@ public class CritterMain {
         CritterFrame frame = new CritterFrame(70, 50);
 
         // uncomment each of these lines as you complete these classes
-        frame.add(30, Bear.class);
-        //frame.add(30, Lion.class);
+        //frame.add(30, Bear.class);
+        frame.add(30, Lion.class);
         //frame.add(30, ZigZag.class);
         //frame.add(30, Boon.class);
-        frame.add(30, Cinnamon.class);
+        //frame.add(30, Cinnamon.class);
         //frame.add(30, Giant.class);
-        frame.add(30, Atom.class);
+        //frame.add(30, Atom.class);
         //frame.add(30, EMBO.class);
-
         frame.add(30, FlyTrap.class);
         frame.add(30, Food.class);
+        frame.add(50, Cartographer.class);
 
         frame.start();
     }
