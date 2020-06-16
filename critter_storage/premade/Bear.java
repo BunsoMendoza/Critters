@@ -6,6 +6,7 @@ public class Bear extends Critter {
     boolean polar = true;
     boolean isOdd = true;
 
+  
     public Bear (boolean polar) {
         this.polar = polar;
     }
