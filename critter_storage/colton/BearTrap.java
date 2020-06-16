@@ -1,3 +1,7 @@
+
+package critter_storage.colton;
+import critter_storage.premade.*;
+import game.*;
 import java.awt.*;
 
 import javax.swing.text.AttributeSet.ColorAttribute;
@@ -14,6 +18,10 @@ public class BearTrap extends Critter {
 
     Color myColor;
 
+    public String getName(){
+        return "BearTrap";
+
+    }
     public Color getColor()
     {
         return myColor;

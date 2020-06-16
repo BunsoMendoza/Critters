@@ -5,12 +5,16 @@
 //Be sure to call 'setFields()' in the getAction() method of the of the subclass to set the fields.
 //You can also add 'printFields(') for debugging.
  
-
-
+package critter_storage.ryan;
+import game.*;
+import critter_storage.premade.*;
 import java.awt.*;
 import java.util.*;
 
 public class Shell extends Critter {
+   
+   public Color getColor() {return null;}
+   public String getName(){return null;}
    
    //step counter should line up with simulation step counter.
    public int step = 1; 
@@ -107,4 +111,6 @@ public class Shell extends Critter {
       System.out.println(Arrays.toString(threat));
       System.out.println(direction);
    }
+
+   
 } 

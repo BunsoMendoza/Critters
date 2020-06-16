@@ -1,4 +1,8 @@
+package critter_storage.ryan;
+import game.*;
+import critter_storage.premade.*;
 import java.awt.*;
+import java.util.*;
 
 public class Snake extends Critter {
    private int direction = 0;
@@ -66,7 +70,11 @@ public class Snake extends Critter {
       } else {
          direction = 4;
       }      
-   } 
+   }
+
+   public String getName() {
+      return "Snake";
+   }
    
    
 }

@@ -1,5 +1,9 @@
+package critter_storage.ryan;
+import game.*;
+import critter_storage.premade.*;
+import java.awt.*;
 import java.util.*;
-import java.awt.*; 
+
 
 public class Bat extends Shell {
 
@@ -14,6 +18,11 @@ public class Bat extends Shell {
    public Bat() {
    
    }
+
+   public String getName(){
+      return "Bat";
+
+  }
    
    public Action getMove(CritterInfo info) {
       

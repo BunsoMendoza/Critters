@@ -1,12 +1,19 @@
-//This critter is testing the inheratence from Shell.java
-import java.util.*;
+//This critter is testing the inheratence from Shell.jav
+package critter_storage.ryan;
+import game.*;
+import critter_storage.premade.*;
 import java.awt.*;
+import java.util.*;
 
 public class Fish extends Shell {
    
    public Fish() {
    
    }
+   public String getName(){
+      return "Fish";
+
+  }
    
    public Action getMove(CritterInfo info) {
       
