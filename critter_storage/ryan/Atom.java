@@ -46,9 +46,6 @@ public class Atom extends Critter {
    public Color getColor() {
       return Color.RED; 
    }
-   public String getCritterName(){
-      return "atom";
-   }
    public String toString() {
       
       if (direction == 1) {

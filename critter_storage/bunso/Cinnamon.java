@@ -7,12 +7,6 @@ import java.util.Random;
 public class Cinnamon extends Critter {
 
 
-
-    public String getCritterName(){
-        return "Cinnamon";
-
-    }
-
     public Action getMove(CritterInfo info) {
 
         Random rand = new Random();

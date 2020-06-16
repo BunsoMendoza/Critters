@@ -18,10 +18,7 @@ public class BearTrap extends Critter {
 
     Color myColor;
 
-    public String getCritterName(){
-        return "BearTrap";
 
-    }
     public Color getColor()
     {
         return myColor;

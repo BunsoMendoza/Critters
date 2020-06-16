@@ -2,6 +2,7 @@ package game;
 import critter_storage.premade.*;
 import critter_storage.bunso.*;
 import critter_storage.ryan.*;
+import critter_storage.colton.*;
 import critter_storage.josh.*;
 
 // CSE 142 Homework 8 (Critters)

@@ -29,20 +29,15 @@ import game.*;
 import java.awt.*;
 
 public abstract class Critter{
-    private String name = "";
-    
+
     //methods that need to be overriden
-    //critter name displayed on gui for tracking { return "Critter";}
-    public abstract String getCritterName(); 
     //for player character usualy one character {return "A";}
     public abstract String toString();
     //change color of character {return Color.PINK;}
     public abstract Color getColor();
     //handle movement 
     public abstract Action getMove(CritterInfo info);
-    public void setName(String name){
-     this.name = name;
-    }
+  
 
     public static enum Neighbor {
         WALL, EMPTY, SAME, OTHER

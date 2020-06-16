@@ -1,5 +1,8 @@
-import java.util.*;
+package critter_storage.ryan;
+import game.*;
+import critter_storage.premade.*;
 import java.awt.*;
+import java.util.*;
 
 public class Rihno extends Shell {
 

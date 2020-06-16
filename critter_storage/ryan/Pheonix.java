@@ -1,8 +1,5 @@
 package critter_storage.ryan;
 import game.*;
-import critter_storage.premade.*;
-import java.awt.*;
-import java.util.*;
 
 public class Pheonix extends Shell {
    
@@ -22,10 +19,6 @@ public class Pheonix extends Shell {
    public Pheonix() {
          
    }
-   public String getName(){
-      return "Pheonix";
-
-  }
    public Action getMove(CritterInfo info) {
       
       step++;

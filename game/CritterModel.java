@@ -84,15 +84,11 @@ public class CritterModel {
             info.put(next, new PrivateData(new Point(x, y), d));
         }
         String name = critter.getName();
-       
-        String delims = "[.]+";
-        String[] tokens = name.split(delims);
-        name = tokens[tokens.length -1];
 
         if (!critterCount.containsKey(name))
-            critterCount.put(name, number);
+            critterCount.put(getCritterDisplayName(name), number);
         else
-            critterCount.put(name, critterCount.get(name) + number);
+            critterCount.put(getCritterDisplayName(name), critterCount.get(getCritterDisplayName(name)) + number);
     }
 
     @SuppressWarnings("unchecked")
@@ -234,9 +230,9 @@ public class CritterModel {
                     PrivateData oldData = info.get(other);
                     // then remove that old critter
                     String c1 = other.getClass().getName();
-                    critterCount.put(c1, critterCount.get(c1) - 1);
+                    critterCount.put(getCritterDisplayName(c1), critterCount.get(getCritterDisplayName(c1)) - 1);
                     String c2 = next.getClass().getName();
-                    critterCount.put(c2, critterCount.get(c2) + 1);
+                    critterCount.put(getCritterDisplayName(c2), critterCount.get(getCritterDisplayName(c2)) + 1);
                     info.remove(other);
                     // and add a new one to the grid
                     try {
@@ -291,7 +287,12 @@ public class CritterModel {
             return p + " " + direction;
         }
     }
+    private String getCritterDisplayName(String name){
 
+        String delims = "[.]+";
+        String[] tokens = name.split(delims);
+        return tokens[tokens.length -1];
+    }
     // an object used to query a critter's state (neighbors, direction)
     private static class Info implements CritterInfo {
         private Critter.Neighbor[] neighbors;

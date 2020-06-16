@@ -72,9 +72,7 @@ public class Snake extends Critter {
       }      
    }
 
-   public String getCritterName() {
-      return "Snake";
-   }
+ 
    
    
 }

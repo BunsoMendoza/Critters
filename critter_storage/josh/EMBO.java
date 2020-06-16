@@ -19,10 +19,6 @@ public class EMBO extends Critter {
 		this.EMBOIndex = 0;
 	}
 
-	public String getCritterName(){
-        return "EMBO";
-
-    }
 	
 	// returns the color of the EMBO
 	public Color getColor() {

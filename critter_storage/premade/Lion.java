@@ -5,11 +5,7 @@ import java.util.Random;
 
 public class Lion extends Critter{
 
-    
-    public String getCritterName(){
-        return "Lion";
 
-    }
 
     public Action getMove(CritterInfo info) {
         if (info.getFront() == Neighbor.OTHER) {

@@ -10,11 +10,6 @@ public class Fish extends Shell {
    public Fish() {
    
    }
-   public String getName(){
-      return "Fish";
-
-  }
-   
    public Action getMove(CritterInfo info) {
       
       //HERE

@@ -11,10 +11,6 @@ public class Boon extends Critter {
     private int sumOfN = 0;
     private int N = 1;
     
-    public String getCritterName(){
-        return "Food";
-
-    }
     public Action getMove(CritterInfo info) {
         if (attached) {
             return attachedPivot(info);

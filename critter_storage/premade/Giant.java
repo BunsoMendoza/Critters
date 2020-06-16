@@ -5,10 +5,7 @@ public class Giant extends Critter{
    
     int counter = 0;
     
-    public String getCritterName(){
-        return "Giant";
 
-    }
 
     public Action getMove(CritterInfo info) {
         if(info.getFront() == Neighbor.OTHER){

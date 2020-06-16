@@ -8,10 +8,7 @@ public class ZigZag extends Critter {
     int sumOfN = 0;
     int N = 1;
     
-    public String getCritterName(){
-        return "ZigZag";
 
-    }
 
     public Action getMove(CritterInfo info) {
         if(N > 20){
