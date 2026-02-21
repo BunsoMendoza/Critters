@@ -7,6 +7,7 @@ namespace CritterSimulator.CritterStorage.Bunso
 {
     public class ReusableMethods : Premade.Critter
     {
+        private static readonly Random rand = new Random();
         public override string ToString()
         {
             return null;
@@ -109,7 +110,7 @@ namespace CritterSimulator.CritterStorage.Bunso
                     if (walls[0] == "front")
                     {
                         FacedDirection();
-                        bool b = new Random().NextDouble() < 0.5;
+                        bool b = rand.NextDouble() < 0.5;
                         return b ? turnLeft : turnRight;
                     }
                     else if (walls[0] == "right")

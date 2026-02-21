@@ -8,6 +8,8 @@ namespace CritterSimulator.CritterStorage.Josh
     // Critter class extension for a critter called a 'EMBO'
     public class EMBO : Critter
     {
+        private static readonly Random rand = new Random();
+
         // Private variables to measure the count of the instances and the previous string of the EMBO
         // and the different possible String values of the EMBO
         private int count;
@@ -25,7 +27,6 @@ namespace CritterSimulator.CritterStorage.Josh
         // Returns the color of the EMBO
         public override Color GetColor()
         {
-            Random rand = new Random();
             int currentColor = rand.Next(3);
 
             switch (currentColor)

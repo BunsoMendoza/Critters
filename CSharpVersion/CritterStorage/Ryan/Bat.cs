@@ -7,6 +7,7 @@ namespace CritterSimulator.CritterStorage.Ryan
 {
     public class Bat : Shell
     {
+        private static readonly Random rand = new Random();
         private bool runBounce = false;
         private bool runHop = false;
         private bool runSpin = false;
@@ -51,7 +52,7 @@ namespace CritterSimulator.CritterStorage.Ryan
             // If you meet your kin flip a coin L or R
             if (neighbor[front] == same)
             {
-                bool b = new Random().NextDouble() < 0.5;
+                bool b = rand.NextDouble() < 0.5;
                 if (b)
                 {
                     return R;

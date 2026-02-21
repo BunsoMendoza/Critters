@@ -6,6 +6,8 @@ namespace CritterSimulator.CritterStorage.Premade
 {
     public class Lion : Critter
     {
+        private static readonly Random rand = new Random();
+
         public override Action GetMove(ICritterInfo info)
         {
             if (info.GetFront() == Neighbor.Other)
@@ -28,7 +30,6 @@ namespace CritterSimulator.CritterStorage.Premade
 
         public override Color GetColor()
         {
-            Random rand = new Random();
             int currentColor = rand.Next(3);
 
             switch (currentColor)

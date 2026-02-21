@@ -7,9 +7,10 @@ namespace CritterSimulator.CritterStorage.Bunso
 {
     public class Cinnamon : Critter
     {
+        private static readonly Random rand = new Random();
+
         public override Action GetMove(ICritterInfo info)
         {
-            Random rand = new Random();
             int current = rand.Next(2);
             bool isRight = true;
             bool hasBounced = false;
